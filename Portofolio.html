@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio Website</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/44e5109227.js"></script>
+</head>
+<body>
+<header class="navbar-container">
+    <nav class="nav-list">
+        <div class="logo">
+            <img alt="Logo-sagash" src="assets/Sagash.svg"/>
+        </div>
+        <div class="menu-icon" id="menu-icon" onclick="displayMenu()">
+            <i class="fa-solid fa-list" id="icon"></i>
+        </div>
+        <ul class="active-menu" id="menu-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="content home">
+        <h3>
+            Hi, I'm Daud.
+            <br>
+            I'am enthusiastic Back-End Developer, DevOps and Cloud Computing.
+        </h3>
+    </div>
+    <div class="content about" id="about">
+        <div class="row">
+            <aside class="about-col-1">
+                <figure>
+                    <img alt="profile" src="assets/daud.png">
+                    <figcaption><h2 class="sub-title">Daud Hidayat Ramadhan</h2></figcaption>
+                </figure>
+
+            </aside>
+            <article class="about-col-2">
+                <h2 class="sub-title">About Me</h2>
+                <p>I am interested in Back-End, DevOps, and Cloud Computing following the development of Back-End
+                    technology,
+                    DevOps, and Cloud Computing
+                    take courses on Back-End, DevOps, and Cloud Computing</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="display('skills')">Skills</p>
+                    <p class="tab-links" onclick="display('experience')">Experience</p>
+                    <p class="tab-links " onclick="display('education')">Education</p>
+                </div>
+                <section class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Back-End Development</span><br> PHP, Laravel, kotlin and javascript developer</li>
+                        <li><span>DevOps Engineer</span><br>DevOps Engineer</li>
+                        <li><span>cloud Engineer</span><br> AWS and GCP</li>
+                    </ul>
+                </section>
+                <section class="tab-content " id="experience">
+                    <ul>
+                        <li><span>2023-current</span><br>Laboratory Assistant at University Islamic Indonesia</li>
+                        <li><span>2023</span><br>Technical Writer at Javan Cipta Solusi</li>
+                    </ul>
+                </section>
+                <section class="tab-content" id="education">
+                    <ul>
+                        <li><span>2021-current</span><br>University Islamic Indonesia</li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </div>
+    <div class="content portofolio" id="portofolio">
+        <div class="row">
+            <h2 class="sub-title">Portofolio</h2>
+            <div class="portofolio-item">
+                <section>
+                    <i class="fa-brands fa-laravel"></i>
+                    <i class="fa-solid fa-database"></i>
+                    <i class="fa-brands fa-docker"></i>
+                    <h2>Todolist </h2>
+                    <p>
+                        A simple to-do list application developed using PHP and MySQL features a user-friendly interface
+                        for task management. Users can add, delete, and mark tasks as completed. The PHP backend
+                        interacts with a MySQL database to store tasks persistently, ensuring data is saved between
+                        sessions.</p>
+                    <div class="link-project">
+                        <a href="https://github.com/DaudHidayatR/laravel-todolist.git">Link Project</a>
+                    </div>
+                </section>
+                <section>
+                    <i class="fa-brands fa-laravel"></i>
+                    <i class="fa-solid fa-database"></i>
+                    <i class="fa-brands fa-docker"></i>
+                    <h2>Management contact </h2>
+                    <p>
+                        This application is a contact management system built with Laravel, utilizing SQL for database
+                        operations, and Docker for environment standardization. It employs REST API architecture for
+                        efficient data exchange, enabling users to create, read, update, and delete contact information
+                        seamlessly across platforms.</p>
+                    <div class="link-project">
+                        <a href="https://github.com/DaudHidayatR/belajar-laravel-restful-api.git">Link Project</a>
+                    </div>
+                </section>
+                <section>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Ecotrack</h2>
+                    <p>
+                        A simple purchase and expense tracking app designed for ease of use. Users can quickly log their
+                        daily expenses and purchases, categorize them for better financial management, and view
+                        summaries to understand spending habits. Its intuitive interface ensures a seamless experience
+                        for efficient budget monitoring.
+                    </p>
+                    <div class="link-project">
+                        <a href="https://github.com/DaudHidayatR/EcoTrack.git">Link Project</a>
+                    </div>
+                </section>
+                <section>
+                    <i class="fa-brands fa-aws"></i>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Deploying Web Application</h2>
+                    <p>
+                        Developing a web application as a beginner with AWS and GCP involves using cloud services for
+                        hosting, databases, and scalability. Both platforms offer extensive resources, including
+                        tutorials for setup and deployment. They enable easy scaling, monitoring, and security for web
+                        applications, simplifying the development process for novices.</p>
+                    <div class="link-project">
+                        <a href="#">Link Project</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="contact">
+    <div class="container-contact">
+        <div>
+            <h2 class="sub-title" id="sub-title">
+                Contact me for collaboration and speaking engagement opportunities!</h2>
+            <div class="row">
+                <section class="social-media">
+                    <p><i aria-hidden="true" class="fa-solid fa-paper-plane"></i>daud28xxxxxx@gmail.com</p>
+                    <p><i aria-hidden="true" class="fa-solid fa-phone"></i>08571xxxxx</p>
+                    <div class="social-media-icon">
+                        <a href="#"><i aria-hidden="true" class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                    </div>
+
+                </section>
+                <section class="contact-form">
+                    <form action="">
+                        <label>
+                            <input placeholder="Name" type="text">
+                        </label>
+                        <label>
+                            <input placeholder="Email" type="email">
+                        </label>
+                        <label>
+                            <input placeholder="Phone" type="tel">
+                        </label>
+                        <label>
+                            <textarea placeholder="Type your massage here..."></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="container-copy">
+        <section id="copyright">
+            <p>© 2024 by Daud Hidayat Ramadhan</p>
+        </section>
+    </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
